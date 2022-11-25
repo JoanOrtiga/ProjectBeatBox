@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace _ProjectBeatBox.GameElements.Cards.Scripts.Settings
+namespace _Anark.Scripts.Cards.Data.Settings
 {
     [Serializable]
     public class CardCost

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _ProjectBeatBox.GameElements.Cards.Scripts
+namespace _Anark.Scripts.Cards.Data
 {
     public abstract class Card : ScriptableObject
     {

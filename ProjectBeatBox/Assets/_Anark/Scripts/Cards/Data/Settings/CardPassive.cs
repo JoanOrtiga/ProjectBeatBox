@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace _ProjectBeatBox.GameElements.Cards.Scripts.Settings
+namespace _Anark.Scripts.Cards.Data.Settings
 {
     [CreateAssetMenu(menuName = "Card/Settings/Passive", fileName = "Passive")]
     public class CardPassive : ScriptableObject

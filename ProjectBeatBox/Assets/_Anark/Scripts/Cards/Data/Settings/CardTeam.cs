@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace _ProjectBeatBox.GameElements.Cards.Scripts.Settings
+namespace _Anark.Scripts.Cards.Data.Settings
 {
     [CreateAssetMenu(menuName = "Card/Settings/Team", fileName = "Team")]
     public class CardTeam : ScriptableObject
@@ -9,6 +8,6 @@ namespace _ProjectBeatBox.GameElements.Cards.Scripts.Settings
         [field: SerializeField] public string Id { get; private set; }
         [field: SerializeField] public string Name { get; private set; }
         [field: SerializeField] public Sprite Icon { get; private set; }
-        [field: SerializeField] public CardPassive[] CardPassives { get; private set; }
+        [field: SerializeField] public CardPassive[] Passives { get; private set; }
     }
 }

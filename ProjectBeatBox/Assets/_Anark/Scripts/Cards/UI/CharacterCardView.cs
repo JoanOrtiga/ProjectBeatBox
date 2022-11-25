@@ -1,11 +1,10 @@
-﻿using System;
-using System.Linq;
-using _ProjectBeatBox.GameElements.Cards.Scripts.Settings;
+﻿using System.Linq;
+using _Anark.Scripts.Cards.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace _ProjectBeatBox.GameElements.Cards.Scripts
+namespace _Anark.Scripts.Cards.UI
 {
     public class CharacterCardView : CardView
     {
@@ -80,31 +79,6 @@ namespace _ProjectBeatBox.GameElements.Cards.Scripts
             {
                 passiveDescription.text += cardPassive.Description;
             }
-        }
-
-        
-        [Serializable]
-        public struct StatCardElementView
-        {
-            [field: SerializeField] public CardStat StatData { get; private set; }
-            [field: SerializeField] public TextMeshProUGUI NameText { get; private set; }
-            [field: SerializeField] public TextMeshProUGUI AmountText { get; private set; }
-        }
-        
-        [Serializable]
-        public struct CostCardElementView
-        {
-            [field: SerializeField] public CardCost CostData { get; private set; }
-            [field: SerializeField] public TextMeshProUGUI NameText { get; private set; } 
-            [field: SerializeField] public TextMeshProUGUI AmountText { get; private set; }
-        }
-        
-        [Serializable]
-        public struct ResourceCardElementView
-        {
-            [field: SerializeField] public CardResource ResourceData { get; private set; }
-            [field: SerializeField] public TextMeshProUGUI NameText { get; private set; } 
-            [field: SerializeField] public TextMeshProUGUI AmountText { get; private set; }
         }
     }
 }

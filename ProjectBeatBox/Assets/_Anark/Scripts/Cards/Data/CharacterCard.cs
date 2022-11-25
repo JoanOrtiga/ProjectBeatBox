@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using _ProjectBeatBox.GameElements.Cards.Scripts.Settings;
+﻿using _Anark.Scripts.Cards.Data.Settings;
 using UnityEngine;
 
-namespace _ProjectBeatBox.GameElements.Cards.Scripts
+namespace _Anark.Scripts.Cards.Data
 {
     [CreateAssetMenu(menuName = "Card/Character", fileName = "CharacterCard")]
     public class CharacterCard : Card
@@ -18,9 +17,9 @@ namespace _ProjectBeatBox.GameElements.Cards.Scripts
         public CardPassive[] GetCardPassives()
         {
             if (OverrideTeamPassives == null)
-                return Team.CardPassives;
+                return Team.Passives;
             if (OverrideTeamPassives.Length <= 0)
-                return Team.CardPassives;
+                return Team.Passives;
 
             return OverrideTeamPassives;
         }

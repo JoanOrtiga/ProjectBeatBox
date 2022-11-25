@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fe9b4142be495693eec608191c6f7f, type: 3}
+  m_Name: Deck
+  m_EditorClassIdentifier: 
+  <InitialByTypeDecks>k__BackingField:
+  - <Id>k__BackingField: Character
+    <Cards>k__BackingField:
+    - {fileID: 11400000, guid: ecbcb0d35049c4c4d92066ab1e7e9ed5, type: 2}
+    - {fileID: 11400000, guid: ecbcb0d35049c4c4d92066ab1e7e9ed5, type: 2}
+    - {fileID: 11400000, guid: ecbcb0d35049c4c4d92066ab1e7e9ed5, type: 2}
+    - {fileID: 11400000, guid: ecbcb0d35049c4c4d92066ab1e7e9ed5, type: 2}
+    - {fileID: 11400000, guid: ecbcb0d35049c4c4d92066ab1e7e9ed5, type: 2}
+    <MinimumCards>k__BackingField: 4
+    <Chance>k__BackingField: 0
+  - <Id>k__BackingField: Object
+    <Cards>k__BackingField:
+    - {fileID: 11400000, guid: b0a37dc8de18dab4aa80ed368910e639, type: 2}
+    - {fileID: 11400000, guid: b0a37dc8de18dab4aa80ed368910e639, type: 2}
+    - {fileID: 11400000, guid: b0a37dc8de18dab4aa80ed368910e639, type: 2}
+    <MinimumCards>k__BackingField: 1
+    <Chance>k__BackingField: 0
