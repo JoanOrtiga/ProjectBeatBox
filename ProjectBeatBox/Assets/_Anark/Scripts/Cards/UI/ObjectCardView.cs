@@ -21,41 +21,44 @@ namespace _Anark.Scripts.Cards.UI
         {
             base.SetupCardView(card);
 
-            var characterCard = card as ObjectCard;
-            Assert.IsNotNull(characterCard, $"Card should be type {nameof(ObjectCard)}");
+            var objectCard = card as ObjectCard;
+            Assert.IsNotNull(objectCard, $"Card should be type {nameof(ObjectCard)}");
             
-            FillStatsData(characterCard);
-            FillCostData(characterCard);
-            FillResourcesData(characterCard);
+            FillStatsData(objectCard);
+            FillCostData(objectCard);
+            FillResourcesData(objectCard);
         }
 
-        private void FillStatsData(ObjectCard characterCard)
+        private void FillStatsData(ObjectCard objectCard)
         {
             foreach (var statElement in statElements)
             {
-                var statStatus = characterCard.Status.First(cardStatStatus => cardStatStatus.StatData.Id == statElement.StatData.Id);
+                var statStatus = objectCard.Status.First(cardStatStatus => cardStatStatus.StatData.Id == statElement.StatData.Id);
                 if(statElement.NameText != null)
                     statElement.NameText.text = statStatus.StatData.Name;
                 statElement.AmountText.text = statStatus.Amount.ToString();
             }
         }
 
-        private void FillResourcesData(ObjectCard characterCard)
+        private void FillResourcesData(ObjectCard objectCard)
         {
             foreach (var resourceElement in resourceElements)
             {
-                var cardResource = characterCard.Resources.First(cardResource =>  cardResource.ResourceData.Id == resourceElement.ResourceData.Id);
+                var cardResource = objectCard.Resources.First(cardResource =>  cardResource.ResourceData.Id == resourceElement.ResourceData.Id);
                 if(resourceElement.NameText != null)
                     resourceElement.NameText.text = cardResource.ResourceData.Name;
                 resourceElement.AmountText.text = cardResource.Amount.ToString();
             }
         }
 
-        private void FillCostData(ObjectCard characterCard)
+        private void FillCostData(ObjectCard objectCard)
         {
+            if (objectCard.Cost == null || objectCard.Cost.Length == 0)
+                return;
+            
             foreach (var costElement in costElements)
             {
-                var cardCost = characterCard.Cost.First(cardCost => cardCost.CardResource.Id == costElement.CostData.CardResource.Id);
+                var cardCost = objectCard.Cost.First(cardCost => cardCost.CardResource.Id == costElement.CostData.CardResource.Id);
                 if(costElement.NameText != null)
                     costElement.NameText.text = cardCost.CardResource.Name;
                 costElement.AmountText.text = cardCost.Amount.ToString();

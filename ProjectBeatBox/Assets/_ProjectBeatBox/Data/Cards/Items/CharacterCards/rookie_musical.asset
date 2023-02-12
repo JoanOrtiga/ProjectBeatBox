@@ -17,7 +17,7 @@ MonoBehaviour:
   <FrontImage>k__BackingField: {fileID: 0}
   <BackImage>k__BackingField: {fileID: 0}
   <Cost>k__BackingField: []
-  <Team>k__BackingField: {fileID: 0}
+  <Team>k__BackingField: {fileID: 11400000, guid: 509c8fd09b349ff48a6e48c9d9e17f45, type: 2}
   <Resources>k__BackingField:
   - <ResourceData>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
     <Amount>k__BackingField: 1

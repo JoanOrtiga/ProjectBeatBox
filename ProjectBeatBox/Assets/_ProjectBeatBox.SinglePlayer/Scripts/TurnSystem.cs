@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using _ProjectBeatBox_SinglePlayer;
 using _ProjectBeatBox_SinglePlayer.ReferenceSystem;
+using _ProjectBeatBox_SinglePlayer.Turns;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,7 +10,8 @@ namespace _ProjectBeatBox.SinglePlayer
 {
     public class TurnSystem : MonoBehaviour
     {
-        [SerializeField] private TurnSystemReference turnSystemReference;
+        [SerializeField] private TurnSystemReference turnSystemReference; 
+        [SerializeField] private TurnBehaviourCatalog turnBehaviourCatalog;
         [SerializeField] private GameMode gameMode;
 
         private int currentTurn = 0;
@@ -17,6 +19,8 @@ namespace _ProjectBeatBox.SinglePlayer
         private void Awake()
         {
             turnSystemReference.SetReference(this);
+
+            gameMode.Init();
         }
 
         public void AddPlayer(Player player)
@@ -36,9 +40,7 @@ namespace _ProjectBeatBox.SinglePlayer
         
         private void StartGame()
         {
-            
+            turnBehaviourCatalog.SetTurn(gameMode.Turns[currentTurn]);
         }
-        
-        
     }
 }

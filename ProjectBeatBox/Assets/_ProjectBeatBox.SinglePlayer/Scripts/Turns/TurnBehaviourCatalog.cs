@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 namespace _ProjectBeatBox_SinglePlayer.Turns
 {
@@ -12,9 +8,9 @@ namespace _ProjectBeatBox_SinglePlayer.Turns
 
         public void SetTurn<T>(T turnSettings) where T : TurnSettings
         {
-            if (shopTurnBehaviour.GetTurnType == typeof(T))
+            if (turnSettings.GetType() == typeof(ShopTurnSettings))
             {
-                shopTurnBehaviour.Init<T>(turnSettings);
+                shopTurnBehaviour.Init(turnSettings as ShopTurnSettings);
             }
         }
     }

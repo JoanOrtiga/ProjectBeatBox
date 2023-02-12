@@ -16,6 +16,14 @@ namespace _ProjectBeatBox_SinglePlayer
 
         public bool AllPlayersAssigned => _currentPlayers >= RequiredPlayers;
         private int _currentPlayers = 0;
+
+        public void Init()
+        {
+            foreach (var playerReference in PlayersParticipating)
+            {
+                playerReference.Restart();
+            }
+        }
         
         public PlayerReference GetRandomPlayerReference()
         {
@@ -25,9 +33,14 @@ namespace _ProjectBeatBox_SinglePlayer
         }
 
         private static PlayerReference GetRandomPlayerReference(List<PlayerReference> playerReferences)
-        { 
+        {
+            foreach (var VARIABLE in playerReferences)
+            {
+                Debug.Log(VARIABLE.Assigned);
+            }
             var nonAssignedPlayers = playerReferences.FindAll(x => !x.Assigned);
-            return nonAssignedPlayers[Random.Range(0, nonAssignedPlayers.Count)];
+            var randomValue = Random.Range(0, nonAssignedPlayers.Count);
+            return nonAssignedPlayers[randomValue];
         }   
     }
 }

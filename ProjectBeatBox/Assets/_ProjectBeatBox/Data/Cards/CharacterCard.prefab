@@ -245,7 +245,7 @@ Transform:
   - {fileID: 8728599947390850576}
   - {fileID: 5924723573830128976}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9153686187830771761
 MonoBehaviour:
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 966272563121054053}
-  frontImage: {fileID: 0}
-  backImage: {fileID: 0}
+  frontImage: {fileID: 1785794772210798037}
+  backImage: {fileID: 1785794772210798037}
   costElements:
   - <CostData>k__BackingField:
       <CardResource>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
@@ -270,17 +270,17 @@ MonoBehaviour:
     <AmountText>k__BackingField: {fileID: 3351556911280435933}
   statElements:
   - <StatData>k__BackingField: {fileID: 11400000, guid: 86db14ecc2921944db3bb767416f8892, type: 2}
-    <NameText>k__BackingField: {fileID: 4022717924129886468}
-    <AmountText>k__BackingField: {fileID: 0}
+    <NameText>k__BackingField: {fileID: 0}
+    <AmountText>k__BackingField: {fileID: 4022717924129886468}
   - <StatData>k__BackingField: {fileID: 11400000, guid: fea7237f9fa275e429ea655c8e34a65e, type: 2}
-    <NameText>k__BackingField: {fileID: 6031801318421452319}
-    <AmountText>k__BackingField: {fileID: 0}
+    <NameText>k__BackingField: {fileID: 0}
+    <AmountText>k__BackingField: {fileID: 6031801318421452319}
   - <StatData>k__BackingField: {fileID: 11400000, guid: 80e509438ea52df45a5bdc660a848cc2, type: 2}
-    <NameText>k__BackingField: {fileID: 1489445957832559580}
-    <AmountText>k__BackingField: {fileID: 0}
+    <NameText>k__BackingField: {fileID: 0}
+    <AmountText>k__BackingField: {fileID: 1489445957832559580}
   - <StatData>k__BackingField: {fileID: 11400000, guid: 107dc634fed9939408570bcd1d81f148, type: 2}
-    <NameText>k__BackingField: {fileID: 2558885682367400831}
-    <AmountText>k__BackingField: {fileID: 0}
+    <NameText>k__BackingField: {fileID: 0}
+    <AmountText>k__BackingField: {fileID: 2558885682367400831}
   resourceElements:
   - <ResourceData>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
     <NameText>k__BackingField: {fileID: 0}

@@ -62,6 +62,9 @@ namespace _Anark.Scripts.Cards.UI
 
         private void FillCostData(CharacterCard characterCard)
         {
+            if (characterCard.Cost == null || characterCard.Cost.Length == 0)
+                return;
+            
             foreach (var costElement in costElements)
             {
                 var cardCost = characterCard.Cost.First(cardCost => cardCost.CardResource.Id == costElement.CostData.CardResource.Id);
@@ -73,11 +76,14 @@ namespace _Anark.Scripts.Cards.UI
 
         private void FillTeamData(CharacterCard characterCard)
         {
+            if (teamIcon == null)
+                return;
             teamIcon.sprite = characterCard.Team.Icon ? characterCard.Team.Icon : teamIcon.sprite;
         }
 
         private void FillPassivesData(CharacterCard characterCard)
         {
+            return; 
             passiveDescription.text = string.Empty;
             foreach (var cardPassive in characterCard.GetCardPassives())
             {

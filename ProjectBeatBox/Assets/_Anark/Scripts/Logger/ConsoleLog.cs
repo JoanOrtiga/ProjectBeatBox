@@ -6,7 +6,7 @@ namespace _Anark.Scripts.Logger
     {
         public enum Tags
         {
-            Reference
+            Reference, InMatch
         }
 
         public static void LogMessage(object message, Tags tag)
