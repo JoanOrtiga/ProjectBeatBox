@@ -22,5 +22,15 @@ namespace _Anark.Scripts.Cards
         {
             _deck.Remove(card);
         }
+
+        public void SetNewDeck(List<Card> newDeck)
+        {
+            _deck.Clear();
+
+            foreach (var card in newDeck)
+            {
+                AddCard(card);
+            }
+        }
     }
 }

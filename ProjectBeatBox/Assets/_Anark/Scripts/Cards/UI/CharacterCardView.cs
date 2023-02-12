@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using _Anark.Scripts.Cards.Data;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -42,7 +43,8 @@ namespace _Anark.Scripts.Cards.UI
             foreach (var statElement in statElements)
             {
                 var statStatus = characterCard.Status.First(cardStatStatus => cardStatStatus.StatData.Id == statElement.StatData.Id);
-                statElement.NameText.text = statStatus.StatData.Name;
+                if(statElement.NameText != null)
+                    statElement.NameText.text = statStatus.StatData.Name;
                 statElement.AmountText.text = statStatus.Amount.ToString();
             }
         }
@@ -52,7 +54,8 @@ namespace _Anark.Scripts.Cards.UI
             foreach (var resourceElement in resourceElements)
             {
                 var cardResource = characterCard.Resources.First(cardResource =>  cardResource.ResourceData.Id == resourceElement.ResourceData.Id);
-                resourceElement.NameText.text = cardResource.ResourceData.Name;
+                if(resourceElement.NameText != null)
+                    resourceElement.NameText.text = cardResource.ResourceData.Name;
                 resourceElement.AmountText.text = cardResource.Amount.ToString();
             }
         }
@@ -62,14 +65,15 @@ namespace _Anark.Scripts.Cards.UI
             foreach (var costElement in costElements)
             {
                 var cardCost = characterCard.Cost.First(cardCost => cardCost.CardResource.Id == costElement.CostData.CardResource.Id);
-                costElement.NameText.text = cardCost.CardResource.Name;
+                if(costElement.NameText != null)
+                    costElement.NameText.text = cardCost.CardResource.Name;
                 costElement.AmountText.text = cardCost.Amount.ToString();
             }
         }
 
         private void FillTeamData(CharacterCard characterCard)
         {
-            teamIcon.sprite = characterCard.Team.Icon;
+            teamIcon.sprite = characterCard.Team.Icon ? characterCard.Team.Icon : teamIcon.sprite;
         }
 
         private void FillPassivesData(CharacterCard characterCard)
@@ -77,7 +81,7 @@ namespace _Anark.Scripts.Cards.UI
             passiveDescription.text = string.Empty;
             foreach (var cardPassive in characterCard.GetCardPassives())
             {
-                passiveDescription.text += cardPassive.Description;
+                passiveDescription.text += cardPassive.Description ?? string.Empty;
             }
         }
     }

@@ -13,11 +13,13 @@ namespace _Anark.Scripts.Cards.UI
         [SerializeField] private SpriteRenderer frontImage;
         [SerializeField] private SpriteRenderer backImage;
     
+        protected const string ErrorText = "ERROR";
+        
         public virtual void SetupCardView(Card card)
         {
-            nameText.text = card.Name;
-            frontImage.sprite = card.FrontImage;
-            backImage.sprite = card.BackImage;
+            nameText.text = card.Name ?? ErrorText;
+            frontImage.sprite = card.FrontImage ? card.FrontImage : frontImage.sprite;
+            backImage.sprite = card.BackImage ? card.BackImage : backImage.sprite;
         }
         
         [Serializable]

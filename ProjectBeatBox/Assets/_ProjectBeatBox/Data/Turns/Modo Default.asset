@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64e9808d7e54eb48ba95a122719e449, type: 3}
+  m_Name: Modo Default
+  m_EditorClassIdentifier: 
+  playerReferenceAssets:
+  - {fileID: 11400000, guid: df339dc4a7731b34bb035ad6960371c5, type: 2}
+  - {fileID: 11400000, guid: a84046f756c107045b008577e29fad43, type: 2}
+  turns:
+  - {fileID: 11400000, guid: f16d3025fdf1d2546b6b4e31e3e01ef4, type: 2}
+  - {fileID: 11400000, guid: f902a5dccc216514f93fce9cb4707b4a, type: 2}
