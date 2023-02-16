@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ba1c3e29ba4acb9026aa5743131e2e, type: 3}
+  m_Name: char_e_isakko
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: char_e_isakko
+  <Name>k__BackingField: Isakko
+  <FrontImage>k__BackingField: {fileID: 2671866726930494217, guid: fa34ad9080906a049a5079409c9971c2, type: 3}
+  <BackImage>k__BackingField: {fileID: -1751956388163021721, guid: 77acb0ed88e2a6c47aad12357b0ca56a, type: 3}
+  <Cost>k__BackingField:
+  - <CardResource>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
+    <Amount>k__BackingField: 5
+  <Team>k__BackingField: {fileID: 11400000, guid: b22226db45c0b804ebada39e62c5249b, type: 2}
+  <Resources>k__BackingField:
+  - <ResourceData>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
+    <Amount>k__BackingField: 2
+  <Status>k__BackingField:
+  - <StatData>k__BackingField: {fileID: 11400000, guid: 86db14ecc2921944db3bb767416f8892, type: 2}
+    <Amount>k__BackingField: 8
+  - <StatData>k__BackingField: {fileID: 11400000, guid: fea7237f9fa275e429ea655c8e34a65e, type: 2}
+    <Amount>k__BackingField: 6
+  - <StatData>k__BackingField: {fileID: 11400000, guid: 80e509438ea52df45a5bdc660a848cc2, type: 2}
+    <Amount>k__BackingField: 5
+  - <StatData>k__BackingField: {fileID: 11400000, guid: 107dc634fed9939408570bcd1d81f148, type: 2}
+    <Amount>k__BackingField: 6
+  <OverrideTeamPassives>k__BackingField: []
