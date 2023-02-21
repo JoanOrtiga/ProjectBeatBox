@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using _Anark.Scripts.Cards.Data;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace _ProjectBeatBox.SinglePlayer.Scripts.Match.Shop
