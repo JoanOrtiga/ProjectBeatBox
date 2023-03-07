@@ -3,6 +3,7 @@ using _Anark.Scripts.Cards.Data;
 using _Anark.Scripts.Cards.Data.Settings;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace _Anark.Scripts.Cards.UI
 {
@@ -10,8 +11,8 @@ namespace _Anark.Scripts.Cards.UI
     {
         [Header("General Information")]
         [SerializeField] private TextMeshProUGUI nameText;
-        [SerializeField] private SpriteRenderer frontImage;
-        [SerializeField] private SpriteRenderer backImage;
+        [SerializeField] private Image frontImage;
+        [SerializeField] private Image backImage;
     
         protected const string ErrorText = "ERROR";
         
@@ -19,7 +20,8 @@ namespace _Anark.Scripts.Cards.UI
         {
             nameText.text = card.Name ?? ErrorText;
             frontImage.sprite = card.FrontImage ? card.FrontImage : frontImage.sprite;
-            backImage.sprite = card.BackImage ? card.BackImage : backImage.sprite;
+            if(backImage != null)
+                backImage.sprite = card.BackImage ? card.BackImage : backImage.sprite;
         }
         
         [Serializable]

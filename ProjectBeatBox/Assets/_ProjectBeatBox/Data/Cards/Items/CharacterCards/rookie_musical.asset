@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Id>k__BackingField: rookie_musical
   <Name>k__BackingField: Rookie Musical
-  <FrontImage>k__BackingField: {fileID: -3466618633833935492, guid: fefad423e025a8e41ba85b36adae6642, type: 3}
-  <BackImage>k__BackingField: {fileID: -4627630961725633101, guid: 1388e2065d0fd0746b7648552cd5d4e8, type: 3}
+  <FrontImage>k__BackingField: {fileID: 3253762494149406171, guid: 8cafba198f728b447a575b9dfe7f5daa, type: 3}
+  <BackImage>k__BackingField: {fileID: -2322714784651591428, guid: f1f70e145cbdc6a4197ade4497da04ab, type: 3}
   <Cost>k__BackingField: []
   <Team>k__BackingField: {fileID: 11400000, guid: 509c8fd09b349ff48a6e48c9d9e17f45, type: 2}
   <Resources>k__BackingField:

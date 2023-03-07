@@ -76,6 +76,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1869374473107337434 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5513519904786273073, guid: 85c4a8e34fdc68d4dad9b3af635e9884, type: 3}
+  m_PrefabInstance: {fileID: 6157176097909384171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3128441951025266413 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9086252392191646982, guid: 85c4a8e34fdc68d4dad9b3af635e9884, type: 3}
@@ -116,8 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 6348471077318115982}
-  frontImage: {fileID: 5601006703055597118}
-  backImage: {fileID: 5601006703055597118}
+  frontImage: {fileID: 1869374473107337434}
+  backImage: {fileID: 0}
   costElements:
   - <CostData>k__BackingField:
       <CardResource>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
@@ -141,11 +152,6 @@ MonoBehaviour:
   - <ResourceData>k__BackingField: {fileID: 11400000, guid: a5e36650de6d59b408b49123e6130ecf, type: 2}
     <NameText>k__BackingField: {fileID: 0}
     <AmountText>k__BackingField: {fileID: 3128441951025266413}
---- !u!212 &5601006703055597118 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1785794772210798037, guid: 85c4a8e34fdc68d4dad9b3af635e9884, type: 3}
-  m_PrefabInstance: {fileID: 6157176097909384171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6348471077318115982 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 966272563121054053, guid: 85c4a8e34fdc68d4dad9b3af635e9884, type: 3}

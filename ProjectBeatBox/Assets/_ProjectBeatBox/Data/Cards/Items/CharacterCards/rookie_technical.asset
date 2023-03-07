@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Id>k__BackingField: rookie_technical
   <Name>k__BackingField: Rookie Technical
-  <FrontImage>k__BackingField: {fileID: 5836991143217587152, guid: 67e17a72bfa7e8b4c8d3ffc2c3680a3e, type: 3}
-  <BackImage>k__BackingField: {fileID: -4627630961725633101, guid: 1388e2065d0fd0746b7648552cd5d4e8, type: 3}
+  <FrontImage>k__BackingField: {fileID: 8936699203231293470, guid: 9b7e47c71889c1e40a43417b29cee9cb, type: 3}
+  <BackImage>k__BackingField: {fileID: -1751956388163021721, guid: 77acb0ed88e2a6c47aad12357b0ca56a, type: 3}
   <Cost>k__BackingField: []
   <Team>k__BackingField: {fileID: 0}
   <Resources>k__BackingField:

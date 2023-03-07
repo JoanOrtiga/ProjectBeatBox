@@ -14,7 +14,8 @@ namespace _ProjectBeatBox.SinglePlayer
         [SerializeField] private TurnBehaviourCatalog turnBehaviourCatalog;
         [SerializeField] private GameMode gameMode;
 
-        private int currentTurn = 0;
+        private int _currentTurnIndex = 0;
+        
 
         private void Awake()
         {
@@ -40,7 +41,7 @@ namespace _ProjectBeatBox.SinglePlayer
         
         private void StartGame()
         {
-            turnBehaviourCatalog.SetTurn(gameMode.Turns[currentTurn]);
+            turnBehaviourCatalog.SetTurn(gameMode.Turns[_currentTurnIndex]);
         }
     }
 }
